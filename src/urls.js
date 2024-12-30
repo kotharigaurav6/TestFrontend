@@ -1,6 +1,3 @@
-import dotenv from 'dotenv';
-dotenv.config();
-
 export const recruiterURL = process.env.REACT_APP_RECRUITER_URL;
 export const candidateURL = process.env.REACT_APP_CANDIDATE_URL;
 export const adminURL = process.env.REACT_APP_ADMIN_URL;
