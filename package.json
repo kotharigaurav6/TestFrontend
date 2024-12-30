@@ -56,7 +56,8 @@
     "node": "20.x"
   },
   "browser": {
-  "process": "process/browser"
+  "process": "process/browser",
+  "stream": "stream-browserify"
 }
 
 }
