@@ -1,6 +1,7 @@
 npm install --save-dev @babel/plugin-proposal-private-property-in-object
 npm install path-browserify
 npm install webpack
+npm install --save-dev customize-cra
 
 Using react-app-rewired (without ejecting)
 
