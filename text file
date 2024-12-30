@@ -1,6 +1,8 @@
 npm install --save-dev @babel/plugin-proposal-private-property-in-object
 npm install path-browserify
 npm install os-browserify --save-dev
+npm install crypto-browserify --save-dev
+
 npm install webpack
 npm install --save-dev customize-cra
 
