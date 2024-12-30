@@ -1,2 +1,53 @@
 npm install --save-dev @babel/plugin-proposal-private-property-in-object
 npm install path-browserify
+
+Using react-app-rewired (without ejecting)
+
+You can use react-app-rewired to modify the Webpack config without ejecting. Here's how to do it:
+
+Install react-app-rewired:
+
+npm install --save-dev react-app-rewired
+
+Create a config-overrides.js file in the root of your project (if it doesn't exist).
+
+Add the following code to configure the polyfill for path:
+
+const webpack = require('webpack');
+module.exports = {
+  webpack: function (config, env) {
+    config.resolve.fallback = {
+      ...config.resolve.fallback,
+      path: require.resolve('path-browserify'),
+    };
+    return config;
+  },
+};
+Change the start, build, and test scripts in package.json to use react-app-rewired:
+
+json
+Copy code
+"scripts": {
+  "start": "react-app-rewired start",
+  "build": "react-app-rewired build",
+  "test": "react-app-rewired test",
+  "eject": "react-scripts eject"
+}
+Rebuild your app:
+
+npm run build
+
+///////////////////////////
+
+
+import webpack from 'webpack';
+
+export default {
+  webpack: (config, env) => {
+    config.resolve.fallback = {
+      ...config.resolve.fallback,
+      path: require.resolve('path-browserify'),
+    };
+    return config;
+  },
+};
