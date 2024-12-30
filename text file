@@ -1,5 +1,6 @@
 npm install --save-dev @babel/plugin-proposal-private-property-in-object
 npm install path-browserify
+npm install webpack
 
 Using react-app-rewired (without ejecting)
 
@@ -38,6 +39,7 @@ Rebuild your app:
 npm run build
 
 ///////////////////////////
+
 
 
 import webpack from 'webpack';
