@@ -4,6 +4,7 @@ npm install os-browserify --save-dev
 npm install crypto-browserify --save-dev
 npm install buffer
 npm install stream-browserify --save
+npm install process --save
 
 
 npm install webpack
