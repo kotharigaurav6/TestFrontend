@@ -54,5 +54,9 @@
   },
   "engines": {
     "node": "20.x"
-  }
+  },
+  "browser": {
+  "process": "process/browser"
+}
+
 }
