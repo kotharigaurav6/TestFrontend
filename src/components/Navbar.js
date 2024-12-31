@@ -32,6 +32,7 @@ function Navbar(){
                             <li><Link to='/'>Home</Link></li>
                             <li><Link to='/candidateLogin'>Candidate</Link></li>
                             <li><Link to='/recruiterLogin'>Recruiter</Link></li>
+                            <li><Link to='/adminLogin'>Admin</Link></li>
                             <li><Link to='/'>About</Link></li>
                             <li><Link to=''>Contact</Link></li>
                             <li><Link to=''>Services</Link></li>
